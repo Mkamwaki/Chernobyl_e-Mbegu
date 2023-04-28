@@ -4,9 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agriculture API Documentation</title>
+  <title>eMbegu API Documentation</title>
 </head>
 <body>
-  Tell me something more about this API and the system in general
+  <div>
+    <h1>eMbegu</h1>
+    <h3>Chernobyl Hackathon 2023</h3>
+  </div>
+  <div>
+    <h4>Description</h4>
+    <p>
+      e-Mbegu is a mobile application that will help farmers distinguish geniune <br>
+      seeds from fake seeds when purchasing them from dealers. The farmer will enter <br>
+      a unique code from the packet storing the seeds and once the code is entered the <br>
+      app will determine whether the seeeds are geniune or not.
+    </p>
+
+    <h4>Endpoints</h4>
+    <p>
+      The following are the endpoints that are available in the API
+    </p>
+    <ul>
+      <li>GET / - This documentation page</li>
+      <li>POST /login - login with phone and password</li>
+      <li>POST /register - register with phone, fullname, ward, region and password</li>
+      <li>GET /regions - returns a list of regions in Tanzania</li>
+      <li>GET /wards?region={region_name} - returns all wards given a region</li>
+      <li>GET /verify?number={seed_number} - checks if the seed is original or fake given the packet number</li>
+    </ul>
+
+    <h4>Contributors</h4>
+    <p>
+      This project was developed by a group of five main participants whose names are listed 
+      here below
+    </p>
+    <ul>
+      <li>Vicent Laizer</li>
+      <li>Savio Kalinga</li>
+      <li>Shimbe Majestic</li>
+      <li>Mahad Hamis</li>
+      <li>Charles Kadete</li>
+    </ul>
+  </div>
 </body>
 </html>
